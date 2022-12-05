@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Analyzer</title>
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="index.css" />
+	</head>
+	<body>
+		<div class="div-title">
+			<p class="title">Analisador Léxico</p>
+		</div>
+		<div class="container">
+			<div class="section">
+				<div class="gerador">
+					<div class="div_insertWord">
+						<form id="words">
+							<div id="input_and_text">
+								<input type="text" class="main_class" id="register_words" placeholder="Digite a palavra"></input>
+							</div>
+							<div class="form_actions">
+								<input type="reset" id="reset" class="btn-input" value="Limpar" />
+								<input type="submit" class="btn-input" value="Salvar" />
+							</div>
+						</form>
+						<div class="save-words-container">
+							<p class="save-words-title">Palavras salvas: </p>
+							<div id="save-words">
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+		
+					<div class="container_search">
+						<div class="div_searchWords">
+								<p>Procurar palavras:</p>
+								<div class="insert-words">
+								<form>
+									<input type="text" id="getWords" placeholder="Espaço para finalizar" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="container-table">
+					<table id="automato">
+						<tbody>
+							<tr class="tr-header">
+								<th>δ</th>
+							</tr>
+							<tr class="estado_0">
+								<td>q0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<p>Analisador Léxico desenvolvido por Pablo Ghidini para a matéria de Linguagens Formais </p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="analyzer.js"></script>
+	</body>
+</html>
